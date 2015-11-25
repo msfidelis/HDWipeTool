@@ -36,7 +36,7 @@ def apagahd(partition,jumps):
 
     mkvfat  = 'mkfs.vfat    %s -I'  % partition     # Formata em Filesystem VFAT
     mkdos   = 'mkfs.msdos   %s -I'  % partition     # Formata em Filesystem MSDOS
-    mkntfs  = 'mkfs.ntfs    %s -I'  % partition     # Formata em Filesystem NTFS
+    mkntfs  = 'mkfs.ntfs    %s -F'  % partition     # Formata em Filesystem NTFS
     mkvext2 = 'mkfs.ext2    %s'     % partition     # Formata em Filesystem ext2
     mkvext3 = 'mkfs.ext3    %s'     % partition     # Formata em Filesystem ext3
     mkvext4 = 'mkfs.ext4    %s'     % partition     # Formata em Filesystem ext4
@@ -97,7 +97,7 @@ def getopts():
     #Pega o numero de saltos
     jumps = raw_input("Informe o numero de saltos a serem executados (Recomendado: 2): ")
 
-    #Inicia o processo de wipe 
+    #Inicia o processo de wipe
     apagahd(partition,jumps)
 
 
