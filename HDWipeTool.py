@@ -54,31 +54,31 @@ def apagahd(partition,jumps):
 
         print "[*] Executando a formatação em massa de FileSystem"
 
-        print "[!] Executando a formatação da partição da partição para vfat"
+        print "[!] Executando a formatação da partição para vfat"
         subprocess.check_output(mkvfat, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para ext2"
+        print "[!] Executando a formatação da partição para ext2"
         subprocess.check_output(mkvext2, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para MSDOS"
+        print "[!] Executando a formatação da partição para MSDOS"
         subprocess.check_output(mkdos, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para ext3"
+        print "[!] Executando a formatação da partição para ext3"
         subprocess.check_output(mkvext3, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para NTFS"
+        print "[!] Executando a formatação da partição para NTFS"
         subprocess.check_output(mkntfs, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para MINIX"
+        print "[!] Executando a formatação da partição para MINIX"
         subprocess.check_output(mkminix, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para ext4"
+        print "[!] Executando a formatação da partição para ext4"
         subprocess.check_output(mkvext4, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para vfat"
+        print "[!] Executando a formatação da partição para vfat"
         subprocess.check_output(mkvfat, shell=True)
 
-        print "[!] Executando a formatação da partição da partição para ext4"
+        print "[!] Executando a formatação da partição para ext4"
         subprocess.check_output(mkvext4, shell=True)
 
 
